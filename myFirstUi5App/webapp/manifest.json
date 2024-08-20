@@ -1,0 +1,24 @@
+{
+    "sap.app":{
+        "id": "sanjeev",
+        "type": "application"
+    },
+
+    "sap.ui": {
+
+        
+    },
+
+    "sap.ui5": {
+            
+        "rootView": "ui5.apps.Main",
+        
+        
+        "libs": {
+
+            "sap.m": {}
+          
+             }
+    }
+
+}
