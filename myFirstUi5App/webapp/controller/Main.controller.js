@@ -7,7 +7,9 @@ sap.ui.define([
 
         pressButton: function(){
 
-            alert("The button is pressed");
+
+            alert("Hello World!!");
+            console.log("Hello World!!");
 
 
         }
