@@ -2,14 +2,18 @@
 
 <form:SimpleForm>
 
-    <Label text="Username"></Label>
-    <Input type="Text"></Input>
+    <form:content>
 
-    <Label text="Password"></Label>
-    <Input type="Password"></Input>
+        <Label text="Username"></Label>
+        <Input type="Text" id="name"></Input>
 
-    <Button text="Log In" type="Default"></Button>
+        <Label text="Password"></Label>
+        <Input type="Password"  id="pwd"></Input>
 
+        <Button icon="sap-icon://paper-plane" text="Log In" type="Accept" press="onValidate"></Button>
+
+    
+    </form:content>
 
 </form:SimpleForm>
 
