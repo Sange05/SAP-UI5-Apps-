@@ -1,0 +1,16 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="ui5.apps.controller.Main">
+
+<VBox >
+    <Label text="Write Your Name"></Label>
+    
+    <Input type="Text" width="350px" id="idSuperman"></Input>
+
+    <Button text="Print My Name" press="printMyName"></Button>
+
+    <Label id="idSpiderman"></Label>
+
+    <!-- <Text id="idSpiderman"></Text> -->
+
+</VBox>
+
+</mvc:View>

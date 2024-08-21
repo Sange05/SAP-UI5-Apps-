@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+        <script src="https://ui5.sap.com/resources/sap-ui-core.js"
+        data-sap-ui-libs="sap.m"
+        data-sap-ui-theme="sap_fiori_3"
+        data-sap-ui-resourceroots=' {"ui5.apps":"./" } '">
+
+        </script>
+
+        <style>
+
+            #idSpiderman{
+
+                font-size: 100px;
+            }
+
+        </style>
+
+        <script>
+            var oView = new sap.ui.view({
+
+                viewName:"ui5.apps.view.Main",
+                type:"XML"
+
+            });
+
+            oView.placeAt("content");
+
+        </script>
+
+    </head>
+
+    <body id="sapUiBody">
+
+        <div id="content">
+
+        </div>
+
+    </body>
+</html>
