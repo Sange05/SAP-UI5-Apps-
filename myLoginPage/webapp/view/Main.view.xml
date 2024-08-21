@@ -1,0 +1,17 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="ui5.apps.loginPage.controller.Main" xmlns:form="sap.ui.layout.form">
+
+<form:SimpleForm>
+
+    <Label text="Username"></Label>
+    <Input type="Text"></Input>
+
+    <Label text="Password"></Label>
+    <Input type="Password"></Input>
+
+    <Button text="Log In" type="Default"></Button>
+
+
+</form:SimpleForm>
+
+
+</mvc:View>
