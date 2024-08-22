@@ -1,0 +1,66 @@
+{
+
+    "empTab":[
+        {
+            "empNo":"1000",
+            "empName":"Sanjeev",
+            "age":"28",
+            "gender":"M",
+            "married":true,
+            "salary":"1000",
+            "currCode":"USD"
+        },
+
+        {
+            "empNo":"1001",
+            "empName":"Priyanka",
+            "age":"30",
+            "gender":"F",
+            "married":true,
+            "salary":"3000",
+            "currCode":"EUR"
+        },
+
+        {
+            "empNo":"1003",
+            "empName":"Vatsal",
+            "age":"28",
+            "gender":"M",
+            "married":false,
+            "salary":"50000",
+            "currCode":"INR"
+        },
+
+        {
+            "empNo":"1004",
+            "empName":"Avani",
+            "age":"26",
+            "gender":"F",
+            "married":false,
+            "salary":"7500",
+            "currCode":"EUR"
+        },
+        
+        {
+            "empNo":"1005",
+            "empName":"Vaibhav",
+            "age":"28",
+            "gender":"M",
+            "married":false,
+            "salary":"10000",
+            "currCode":"USD"
+        },
+
+        {
+            "empNo":"1006",
+            "empName":"Ketki",
+            "age":"28",
+            "gender":"F",
+            "married":false,
+            "salary":"4500",
+            "currCode":"USD"
+        }
+
+
+    ]
+}

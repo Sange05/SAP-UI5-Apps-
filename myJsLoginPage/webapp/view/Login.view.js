@@ -11,7 +11,8 @@ sap.ui.jsview("ui5.apps.view.Login",{
         });
 
         var oName = new sap.m.Input("idName",{
-            type:"Text"
+            type:"Text",
+            
         });
 
         var oLabelPwd = new sap.m.Label({
@@ -31,7 +32,8 @@ sap.ui.jsview("ui5.apps.view.Login",{
 
         var oForm = new sap.ui.layout.form.SimpleForm("idForm",{
 
-            content:[oLabelName, oName, oLabelPwd, oPwd]
+            title:"Authentication",
+            content:[oLabelName, oName, oLabelPwd, oPwd],
         });
 
         oBtn.setText("Login In");

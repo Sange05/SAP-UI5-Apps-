@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <script src="https://ui5.sap.com/resources/sap-ui-core.js"
+            data-sap-ui-libs="sap.m"
+            data-sap-ui-theme="sap_fiori_3_dark"
+            data-sap-ui-resourceroots='{
+                "ui5.apps":"./"
+            }'>
+    </script>
+
+    <script>
+
+        var oView = new sap.ui.view({
+
+            viewName:"ui5.apps.view.TableView",
+            type: sap.ui.core.mvc.ViewType.XML
+
+        });
+
+        oView.placeAt("content");
+        
+
+    </script>
+
+</head>
+
+<body>
+
+    <div id="content"></div>
+
+
+</body>
+
+</html>

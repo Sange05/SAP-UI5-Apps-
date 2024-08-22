@@ -11,22 +11,19 @@ sap.ui.define([
 
             // var oCore       = sap.ui.getCore();
 
-            var oUserName   = this.getView().byId("name").getValue();
-            
-            var oPwd        = this.getView().byId("pwd").getValue();
+                ar oUserName   = this.getView().byId("name").getValue();
 
-            if (oUserName === oPwd) {
+                var oPwd        = this.getView().byId("pwd").getValue();
 
-                alert("Login Successful Mate!");
-            }
-            else{
-                alert("Login Failed Mate");
-            }
-            
-        
-        }
+                if (oUserName === oPwd) {
 
+                    alert("Login Successful Mate!");
+                }
+                else{
+                    alert("Login Failed Mate");
+                }
 
+    }
 
     });
 

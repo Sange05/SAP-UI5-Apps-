@@ -1,16 +1,27 @@
 <mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="ui5.apps.controller.Main">
 
-<VBox >
-    <Label text="Write Your Name"></Label>
-    
-    <Input type="Text" width="350px" id="idSuperman"></Input>
+    <App>
+        <pages>
 
-    <Button text="Print My Name" press="printMyName"></Button>
+            <Page title="Name Print">
 
-    <Label id="idSpiderman"></Label>
+                <VBox>
+                    <Label text="Write Your Name"></Label>
+                    
+                    <Input type="Text" width="350px" id="idSuperman"></Input>
 
-    <!-- <Text id="idSpiderman"></Text> -->
+                    <Button text="Print My Name" press="printMyName"></Button>
 
-</VBox>
+                    <Label id="idSpiderman"></Label>
+
+                    <!-- <Text id="idSpiderman"></Text> -->
+
+                </VBox>
+
+            </Page>
+
+        </pages>
+
+    </App>
 
 </mvc:View>
