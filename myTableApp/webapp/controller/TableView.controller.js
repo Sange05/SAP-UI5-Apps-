@@ -24,10 +24,16 @@ sap.ui.define([
 
         },
 
-        editDetails: function(){
+
+        copyDetails: function(oEvent){
+
+            var oRow = oEvent.getParameters().rowContext.sPath;
+
+            var oForm = this.getView().byId("idForm");
+
+            oForm.bindElement(oRow);
 
             
-
         }
 
 

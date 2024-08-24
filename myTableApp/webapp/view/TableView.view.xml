@@ -7,7 +7,7 @@
         <pages>
             <Page title="Employee Personal Data">
 
-                <table:Table rows="{/empTab}" selectionMode="Single" >
+                <table:Table rows="{/empTab}" selectionMode="Single" rowSelectionChange="copyDetails">
 
                     <table:Column >
                         <table:label>
@@ -94,28 +94,28 @@
 
                 </table:Table>
 
-                <form:SimpleForm title="Add Employee Data" >
+                <form:SimpleForm title="Add Employee Data" id="idForm" >
 
                     <Label text="Emp No."></Label>
-                    <Input type="Text"></Input>
+                    <Input type="Text" value="{empNo}"></Input>
 
                     <Label text="Emp Name"></Label>
-                    <Input type="Text"></Input>
+                    <Input type="Text" value="{empName}"></Input>
 
                     <Label text="Age"></Label>
-                    <Input type="Text"></Input>
+                    <Input type="Text" value="{age}"></Input>
                     
                     <Label text="Gender"></Label>
-                    <Input type="Text"></Input>
+                    <Input type="Text" value="{gender}"></Input>
                     
                     <Label text="Married?"></Label>
                     <CheckBox selected="{married}"></CheckBox>
                     
                     <Label text="Salary"></Label>
-                    <Input type="Text"></Input>
+                    <Input type="Text" value="{salary}"></Input>
 
                     <Label text="Currency Code"></Label>
-                    <Input type="Text"></Input>
+                    <Input type="Text" value="{currCode}" ></Input>
             
                     <Button text="Add Details" icon="sap-icon://sys-enter-2" press="addDetails" /> 
                     <Button text="Edit" icon="sap-icon://edit" press="editDetails" /> 

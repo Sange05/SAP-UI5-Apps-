@@ -1,6 +1,19 @@
 {
 
+    "empStr":{
+
+        "empNo":"",
+        "empName":"",
+        "age":"",
+        "gender":"",
+        "married":true,
+        "salary":"",
+        "currCode":""
+
+    },
+
     "empTab":[
+        
         {
             "empNo":"1000",
             "empName":"Sanjeev",
