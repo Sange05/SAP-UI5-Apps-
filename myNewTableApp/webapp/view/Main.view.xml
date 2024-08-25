@@ -1,0 +1,16 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:form="sap.ui.layout.form" controllerName="ui5.apps.controller.Main">
+
+        <App>
+
+            <pages>
+
+                <Page >
+
+                </Page>
+
+            </pages>
+
+        </App>
+
+
+</mvc:View>

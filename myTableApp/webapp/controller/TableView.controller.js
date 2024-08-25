@@ -17,17 +17,10 @@ sap.ui.define([
 
         },
 
-        addDetails: function(){
-
-
-
-
-        },
-
 
         copyDetails: function(oEvent){
 
-            var oRow = oEvent.getParameters().rowContext.sPath;
+            var oRow = oEvent.getParameters("sPath");
 
             var oForm = this.getView().byId("idForm");
 
@@ -35,10 +28,6 @@ sap.ui.define([
 
             
         }
-
-
-
-
 
     });
     
