@@ -96,8 +96,6 @@
         
         </table:Column>
 
-
-
     </table:Table>
 
         <form:SimpleForm id="idForm">
@@ -123,11 +121,11 @@
             <Label text="Salary"></Label>
             <Input type="Text" value="{/empStr/salary}"></Input>
 
-            <Label text="Currency Code"></Label>
-            <Input type="Text" value="{/empStr/currCode}"></Input>
+            <Label text="Currency Code" ></Label>
+            <Input type="Text" value="{/empStr/currCode}" enabled="{= ${/empStr/salary} > 2000 ? false : true}"></Input>
         
 
-            <Button text="Save Record" press="addRecord" icon="sap-icon://save" type="Accept"></Button>
+            <Button text="Save Record" press="addRecord" icon="sap-icon://save" type="Accept" id="idBtnSaveRecord"></Button>
         
         </form:SimpleForm>
 
