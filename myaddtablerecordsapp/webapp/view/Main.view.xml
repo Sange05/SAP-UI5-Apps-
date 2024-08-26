@@ -1,0 +1,135 @@
+<mvc:View xmlns:core="sap.ui.core" controllerName="ui5.apps.myaddtablerecordsapp.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m" xmlns:form="sap.ui.layout.form" xmlns:table="sap.ui.table">
+    <Page id="page" title="{i18n>title}">
+        <content />
+
+
+
+    <table:Table rows="{/empTab}">
+
+        <table:Column >
+
+            <table:label>
+                <Label text="Emp No."></Label>
+            </table:label>
+
+            <table:template>
+                <Text text="{empNo}" ></Text>
+            </table:template>
+        
+        </table:Column>
+
+        <table:Column >
+
+            <table:label>
+                <Label text="Emp Name"></Label>
+            </table:label>
+
+            <table:template>
+                <Text text="{empName}" ></Text>
+            </table:template>
+        
+        </table:Column>
+
+        <table:Column >
+
+            <table:label>
+                <Label text="Age"></Label>
+            </table:label>
+
+            <table:template>
+                <Text text="{age}" ></Text>
+            </table:template>
+        
+        </table:Column>
+
+                <table:Column >
+
+            <table:label>
+                <Label text="Married"></Label>
+            </table:label>
+
+            <table:template>
+                <CheckBox selected="{married}"></CheckBox>
+            </table:template>
+        
+        </table:Column>
+
+
+        <table:Column >
+
+            <table:label>
+                <Label text="Gender"></Label>
+            </table:label>
+
+            <table:template>
+                <Select selectedKey="{gender}">
+                <core:Item key="M" text="Male"></core:Item>
+                <core:Item key="F" text="Female"></core:Item>
+            </Select>
+            </table:template>
+        
+        </table:Column>
+        
+        <table:Column >
+
+            <table:label>
+                <Label text="Salary"></Label>
+            </table:label>
+
+            <table:template>
+                <Text text="{salary}" ></Text>
+            </table:template>
+        
+        </table:Column>
+
+                <table:Column >
+
+            <table:label>
+                <Label text="Currency"></Label>
+            </table:label>
+
+            <table:template>
+                <Text text="{currCode}" ></Text>
+            </table:template>
+        
+        </table:Column>
+
+
+
+    </table:Table>
+
+        <form:SimpleForm id="idForm">
+        
+            <Label text="Emp No"></Label>
+            <Input type="Text" value="{/empStr/empNo}" required="true"></Input>
+
+            <Label text="Emp Name"></Label>
+            <Input type="Text" value="{/empStr/empName}" required="true"></Input>
+
+            <Label text="Age"></Label>
+            <Input type="Text" value="{/empStr/age}"></Input>
+
+            <Label text="Married?"></Label>
+            <CheckBox selected="{/empStr/married}"></CheckBox>
+
+            <Label text="Gender"></Label>
+            <Select selectedKey="{/empStr/gender}">
+                <core:Item key="M" text="Male"></core:Item>
+                <core:Item key="F" text="Female"></core:Item>
+            </Select>
+
+            <Label text="Salary"></Label>
+            <Input type="Text" value="{/empStr/salary}"></Input>
+
+            <Label text="Currency Code"></Label>
+            <Input type="Text" value="{/empStr/currCode}"></Input>
+        
+
+            <Button text="Save Record" press="addRecord" icon="sap-icon://save" type="Accept"></Button>
+        
+        </form:SimpleForm>
+
+    </Page>
+</mvc:View>

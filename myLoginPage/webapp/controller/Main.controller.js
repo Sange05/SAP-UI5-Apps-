@@ -11,7 +11,7 @@ sap.ui.define([
 
             // var oCore       = sap.ui.getCore();
 
-                ar oUserName   = this.getView().byId("name").getValue();
+                var oUserName   = this.getView().byId("name").getValue();
 
                 var oPwd        = this.getView().byId("pwd").getValue();
 
