@@ -19,8 +19,6 @@ sap.ui.define(
                 currencyCode: false
             });
 
-           
-
             var result = oCurrencyFormat.format(num, numUnit);
 
             return result;
