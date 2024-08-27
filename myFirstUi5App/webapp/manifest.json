@@ -1,7 +1,40 @@
 {
-    "sap.app":{
+    "sap.app":
+    {
         "id": "sanjeev",
         "type": "application"
+    },
+
+    "sap.ui": {
+        "technology": "UI5",
+        "icons": {
+          "icon": "",
+          "favIcon": "",
+          "phone": "",
+          "phone@2": "",
+          "tablet": "",
+          "tablet@2": ""
+        },
+        "deviceTypes": {
+          "desktop": true,
+          "tablet": true,
+          "phone": true
+        }
+      },
+      
+    "sap.ui5": 
+    {
+        "flexEnabled": true,
+        "dependencies": 
+            {
+            "minUI5Version": "1.127.1",
+            "libs": {
+              "sap.m": {},
+              "sap.ui.core": {},
+              "sap.f": {}
+                    }       
+            }   
     }
+
 
 }

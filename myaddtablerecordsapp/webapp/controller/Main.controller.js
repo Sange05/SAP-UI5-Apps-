@@ -1,12 +1,15 @@
 sap.ui.define([
     "sap/ui/core/mvc/Controller",
-    "sap/ui/model/json/JSONModel"
+    "sap/ui/model/json/JSONModel",
+    "ui5/apps/myaddtablerecordsapp/lifesaver"
   
 ],
-function (Controller, JSONModel) {
+function (Controller, JSONModel, lifeSaver) {
     "use strict";
 
     return Controller.extend("ui5.apps.myaddtablerecordsapp.controller.Main", {
+
+        formatter: lifeSaver,
 
         onInit: function () {
 

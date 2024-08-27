@@ -3,26 +3,24 @@
 <html>
     <head>
 
-        <script src="https://ui5.sap.com/resources/sap-ui-core.js"
-                id="sap-ui-bootstrap"
+        <script id="sap-ui-bootstrap"
+                type="text/javascript"
+                src="https://ui5.sap.com/1.127.0/resources/sap-ui-core.js"
                 data-sap-ui-oninit="module:sap/ui/core/ComponentSupport"
                 data-sap-ui-async="true"
                 data-sap-ui-libs="sap.m"
-                
                 data-sap-ui-frameOptions="trusted"
                 data-sap-ui-theme="sap_bluecrystal"
-                data-sap-ui-resourceroots='{
+                data-sap-ui-resourceroots='{ "ui5.apps":"./"}'>
 
-                    "ui5.apps":"./"
+        var oView = new sap.ui.view({
 
-                }'>
+        viewName:"ui5.apps.view.Main",
+        type:"XML"
 
-                    var oView = new sap.ui.view({
-                        viewName:"ui5.apps.view.Main",
-                        type:"XML"
-                    });
+        });
 
-                    oView.placeAt("content");
+        oView.placeAt("content");
 
         </script>
 
@@ -30,10 +28,7 @@
     </head>
     <body id="sapUiBody">
 
-        <div id="content"
-        data-settings='{"id" : "ui5.apps.mytableaddrecords"}'
-        data-name="ui5.apps.mytableaddrecords"
-        data-id="container"></div>
+        <div id="content"></div>
 
 
     </body>

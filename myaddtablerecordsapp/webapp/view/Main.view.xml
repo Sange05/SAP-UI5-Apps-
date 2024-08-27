@@ -27,7 +27,9 @@
             </table:label>
 
             <table:template>
-                <Text text="{empName}" ></Text>
+                <Text text="{
+                path:'empName',
+                formatter:'.formatter.getMeName'}" ></Text>
             </table:template>
         
         </table:Column>
@@ -79,7 +81,9 @@
             </table:label>
 
             <table:template>
-                <Text text="{salary}" ></Text>
+                <Text text="{
+                parts:[{path:'salary'}, {path:'currCode'}],
+                formatter:'.formatter.getFormattedCurrency'}" ></Text>
             </table:template>
         
         </table:Column>
