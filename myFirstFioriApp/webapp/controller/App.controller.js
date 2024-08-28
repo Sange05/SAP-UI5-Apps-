@@ -35,6 +35,9 @@ sap.ui.define([
             oApp.addPage(oView1);
             oApp.addPage(oView2);
 
+            //Association method to start app from View 2
+            //oApp.setInitialPage(oView2);
+
         }
 
 

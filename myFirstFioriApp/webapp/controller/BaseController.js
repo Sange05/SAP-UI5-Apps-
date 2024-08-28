@@ -8,7 +8,9 @@ sap.ui.define([
 
             getAppObject: function(){
 
-                return sap.ui.getCore().byId("idAppView--myApp");
+                // return sap.ui.getCore().byId("idAppView--myApp");
+
+                return this.getView().getParent();
 
             }
 
