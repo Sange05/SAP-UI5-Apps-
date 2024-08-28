@@ -1,0 +1,11 @@
+<mvc:View   xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="ui5.apps.controller.View1"
+            xmlns:core="sap.ui.core">
+
+            <Page title="View 1">
+        
+                    <Button text="Go to second View" press="onNext" icon="sap-icon://paper-plane"></Button>
+
+            </Page>
+
+
+</mvc:View>
