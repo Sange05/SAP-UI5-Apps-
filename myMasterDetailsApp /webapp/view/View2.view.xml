@@ -26,7 +26,7 @@
                     <IconTabBar >
                         <items>
 
-                            <IconTabFilter key="moreInfo" text="More Info" icon="sap-icon://information">
+                            <IconTabFilter id="idMoreInfo" key="moreInfo" text="More Info" icon="sap-icon://information">
                                 <content>
                                     <core:Fragment fragmentName="ui5.apps.fragments.moreInfo" type="XML" ></core:Fragment>
                                 </content>
@@ -95,7 +95,14 @@
                     </List>
 
                 </content>
-
+            <footer>
+                <Toolbar >
+                    <ToolbarSpacer ></ToolbarSpacer>
+                    <Button text="Approve" type="Accept" press="onAccept"></Button>
+                    <Button text="Reject" type="Reject" press="onReject"></Button>
+                
+                </Toolbar>
+            </footer>
 
         </Page>
 
