@@ -1,0 +1,25 @@
+<mvc:View   xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="ui5.apps.controller.View1"
+            xmlns:core="sap.ui.core">
+
+            <Page title="My Fruit Store">
+
+                <headerContent>
+
+                    <Button press="onNext" icon="sap-icon://action"></Button>
+                                  
+                </headerContent>
+
+                <SearchField search="onSearch" liveChange="onSearch" ></SearchField>
+                
+                <List items="{/fruits}" id="idList" itemPress="onItemPress">
+
+                    <ObjectListItem intro="{benefit}" title="{name}" number="{price}" numberUnit="{unit}"
+                                    icon="{photo}" type="Navigation">
+                    </ObjectListItem>
+
+                </List>
+
+            </Page>
+
+
+</mvc:View>
