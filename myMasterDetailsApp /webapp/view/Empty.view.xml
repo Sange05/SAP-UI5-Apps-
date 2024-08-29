@@ -1,0 +1,6 @@
+<core:mvc xmlns:core="sap.ui.core" xmlns="sap.m">
+
+    <Page title="Please select an item on Master Page"> </Page>
+
+</core:mvc>
+

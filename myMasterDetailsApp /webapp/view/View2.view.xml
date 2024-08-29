@@ -10,7 +10,41 @@
 
                     <SearchField ></SearchField>
 
-                    <Label text="{name}"></Label>
+                    <ObjectHeader intro="{benefit}" title="{name}" number="{price}" numberUnit="{unit}"
+                                    icon="{photo}">
+                        <attributes>
+                            <ObjectAttribute  text="{type}"></ObjectAttribute>
+                            <ObjectAttribute  text="{color}"></ObjectAttribute>
+                        </attributes>
+
+                         <statuses>
+                            <ObjectStatus text="{availability}" state="{= ${availability} === 'A' ? 'Success':'Warning'}"></ObjectStatus>
+                        </statuses>
+
+                    </ObjectHeader>
+
+                    <IconTabBar >
+                        <items>
+
+                            <IconTabFilter key="moreInfo" text="More Info" icon="sap-icon://information">
+                                <content>
+                                    <core:Fragment fragmentName="ui5.apps.fragments.moreInfo" type="XML" ></core:Fragment>
+                                </content>
+                            </IconTabFilter>
+                                
+                            <IconTabFilter key="suppData" text="Supplier Data" icon="sap-icon://supplier">
+                                <content>
+                                    <core:Fragment fragmentName="ui5.apps.fragments.supplierData" type="XML"> </core:Fragment>
+                                </content>
+                            
+                            </IconTabFilter>
+                            <IconTabFilter key="selectCity" text="City Select" icon="sap-icon://home">
+                             <content>
+                                <core:Fragment fragmentName="ui5.apps.fragments.citySelect" type="XML"> </core:Fragment>
+                            </content>
+                            </IconTabFilter>
+                        </items>
+                    </IconTabBar>
                      
                     <List id="idList" visible="false">
 

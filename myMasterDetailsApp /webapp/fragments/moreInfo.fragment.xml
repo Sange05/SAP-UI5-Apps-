@@ -1,0 +1,22 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:form="sap.ui.layout.form">
+
+    <form:SimpleForm editable="true" layout="ResponsiveGridLayout">
+        
+        <form:content>
+
+            <core:Title text="More Info"></core:Title>
+
+            <Label text="Health Benefit"></Label>
+
+            <Text text="{benefit}"></Text>
+
+            <Label text="Nature" ></Label>
+
+            <Text text="{type}"></Text>
+        
+        
+        </form:content>
+ 
+    </form:SimpleForm>
+
+</core:FragmentDefinition>

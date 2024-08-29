@@ -20,7 +20,7 @@
 	}, {
 		"name": "Apricot",
 		"price": "350.00",
-		"unit": "EUR",
+		"unit": "Rs./Kg.",
 		"benefit": "Good for hair",
 		"type": "Alkaline",
 		"availability": "O",
@@ -47,7 +47,7 @@
 	}, {
 		"name": "Bilberry",
 		"price": "300.00",
-		"unit": "EUR",
+		"unit": "Rs./Kg.",
 		"benefit": "Good for eyes",
 		"type": "Acidic",
 		"availability": "D",
@@ -56,7 +56,7 @@
 	}, {
 		"name": "Blackberry",
 		"price": "750.00",
-		"unit": "SAR",
+		"unit": "Rs./Kg.",
 		"benefit": "High in fiber",
 		"type": "Acidic",
 		"availability": "A",

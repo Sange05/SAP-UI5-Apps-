@@ -35,10 +35,20 @@ sap.ui.define([
 
             });
 
+            var oEmptyView = new sap.ui.view({
+
+                viewName:"ui5.apps.view.Empty",
+                type:sap.ui.core.mvc.ViewType.XML,
+                id:"idEmptyView"
+            });
+
             //3. Add the views objects to the app object
 
             oApp.addMasterPage(oView1);
             oApp.addDetailPage(oView2);
+            oApp.addDetailPage(oEmptyView);
+
+            oApp.setInitialDetail("idEmptyView");
 
             //Association method to start app from View 1
             //oApp.setInitialPage(oView1);
