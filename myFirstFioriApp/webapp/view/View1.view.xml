@@ -9,13 +9,13 @@
                                   
                 </headerContent>
 
-                <SearchField search="onSearch" ></SearchField>
+                <SearchField search="onSearch" liveChange="onSearch" ></SearchField>
                 
-                <List items="{/fruits}" id="idList">
+                <List items="{/fruits}" id="idList" itemPress="onItemPress">
 
                     <ObjectListItem intro="{benefit}" title="{name}" number="{price}" numberUnit="{unit}"
-                                    icon="{photo}"
-                    ></ObjectListItem>
+                                    icon="{photo}" type="Navigation">
+                    </ObjectListItem>
 
                 </List>
 

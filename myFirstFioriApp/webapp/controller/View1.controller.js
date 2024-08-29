@@ -15,9 +15,33 @@ function(Controller) {
 
         },
 
+        onItemPress: function (oEvent){
+
+            var oItem = oEvent.getParameter("listItem");
+
+            //Concept which gives you the address of the element is Context
+            
+            var sPath = oItem.getBindingContextPath();
+
+            var oApp = this.getAppObject();
+
+            var oView2 = oApp.getPages()[1]; //Since there are 2 views so we are getting 2nd object of the array
+
+            oView2.bindElement(sPath);
+
+            this.onNext(); //Method to navigate to View 2
+
+        },
+
         onSearch: function(oEvent){
 
             var queryString = oEvent.getParameter("query");
+            
+
+            if(!queryString){
+
+                queryString = oEvent.getParameter("newValue");
+            }
 
             var oFilter = new sap.ui.model.Filter("name",
                                                 sap.ui.model.FilterOperator.Contains,

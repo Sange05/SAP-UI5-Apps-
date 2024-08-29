@@ -9,8 +9,10 @@
                  <!-- <Button text="Go to second View" press="onNext" icon="sap-icon://paper-plane"></Button> -->
 
                     <SearchField ></SearchField>
+
+                    <Label text="{name}"></Label>
                      
-                    <List id="idList">
+                    <List id="idList" visible="false">
 
                         <items>
 
