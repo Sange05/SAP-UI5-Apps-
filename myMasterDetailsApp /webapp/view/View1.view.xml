@@ -11,7 +11,7 @@
 
                 <SearchField search="onSearch" liveChange="onSearch" ></SearchField>
                 
-                <List items="{/fruits}" id="idList" itemPress="onItemPress">
+                <List items="{/fruits}" id="idList" itemPress="onItemPress" mode="SingleSelectMaster" selectionChange="onItemPress">
 
                     <ObjectListItem intro="{benefit}" title="{name}" number="{price}" numberUnit="{unit}"
                                     icon="{photo}" type="Navigation">
