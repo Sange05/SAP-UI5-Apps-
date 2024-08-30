@@ -36,6 +36,67 @@ function(Controller, MessageBox, StatusMessage) {
              
         },
 
+        cityPopup:null,
+        countryPopup:null,
+        inputFieldValue:null,
+
+        onCityConfirm: function(oEvent){
+
+            var oSelected = oEvent.getParameter("selectedItem");
+
+            sap.ui.getCore().byId(this.inputFieldValue).setValue(oSelected.getTitle());
+             
+
+        },
+
+        onF4Help: function(oEvent){
+
+            this.inputFieldValue = oEvent.getSource().getId();
+
+            // StatusMessage.show("This page is under construction");
+            this.cityPopup = new sap.ui.xmlfragment("ui5.apps.fragments.Popup", this);
+
+            this.getView().addDependent(this.cityPopup);
+
+            this.cityPopup.bindAggregation("items",{
+                path:"/cities",
+                template: new sap.m.StandardListItem({
+
+                    title:"{city}",
+                    description:"{state}"
+                })
+            
+            });
+
+            this.cityPopup.attachConfirm(this.onCityConfirm, this);
+            this.cityPopup.open();
+
+        },
+
+        onFilter: function(){
+
+            // StatusMessage.show("This page is under construction");
+            this.countryPopup = new sap.ui.xmlfragment("ui5.apps.fragments.Popup", this);
+
+            this.getView().addDependent(this.countryPopup);
+
+            this.countryPopup.bindAggregation("items",{
+                path:"/countries",
+                template: new sap.m.StandardListItem({
+
+                    title:"{name}",
+                    description:"{code}"
+                })
+            
+            });
+
+
+
+            this.countryPopup.open();
+
+
+        },
+
         onReject: function(){
 
         }

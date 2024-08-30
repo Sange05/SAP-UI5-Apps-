@@ -14,7 +14,7 @@
                 <List items="{/fruits}" id="idList" itemPress="onItemPress" mode="SingleSelectMaster" selectionChange="onItemPress">
 
                     <ObjectListItem intro="{benefit}" title="{name}" number="{price}" numberUnit="{unit}"
-                                    icon="{photo}" type="Navigation">
+                                    icon="{photo}">
                     </ObjectListItem>
 
                 </List>

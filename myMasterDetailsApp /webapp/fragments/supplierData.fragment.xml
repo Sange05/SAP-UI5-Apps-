@@ -1,5 +1,4 @@
 <core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:form="sap.ui.layout.form">
-
     
     <form:SimpleForm editable="true" layout="ResponsiveGridLayout">
         
@@ -7,13 +6,51 @@
 
             <core:Title text="Supplier Data"></core:Title>
 
-            <Label text="Label 1"></Label>
+            <Table id="idTable" items="{/suppliers}">
 
-            <Text text="Text 1"></Text>
+                <headerToolbar>
+                
+                    <Toolbar> 
+                     <ToolbarSpacer/>
+                    <Button icon="sap-icon://filter" press="onFilter"> </Button>
+                     </Toolbar>
+                   
+                    
+                </headerToolbar>
 
-            <Label text="Label 2" ></Label>
+                <columns>
+                
+                    <Column >
+                        <Text text="Name"></Text>
+                    </Column>
 
-            <Text text="Text 2"></Text>
+                    <Column >
+                        <Text text="City"></Text>
+                    </Column>
+
+                    <Column >
+                        <Text text="Since When"></Text>
+                    </Column>
+
+                    <Column >
+                        <Text text="Country"></Text>
+                    </Column>
+
+                </columns>
+                <items>
+                    <ColumnListItem >
+                        <cells>
+                            <Text text="{name}"></Text>
+
+                            <Input value="{city}" showValueHelp="true" valueHelpRequest="onF4Help"></Input>
+
+                            <Text text="{sinceWhen}"></Text>
+
+                            <Text text="{country}"></Text>
+                        </cells>                    
+                    </ColumnListItem>
+                </items>
+            </Table>
         
         
         </form:content>
